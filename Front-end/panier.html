@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="ORINOCO? Le spécialiste de la vente en ligne d'oursons en peluches.">
+	<link rel="stylesheet"  href="style.css" >
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <script src="https://kit.fontawesome.com/180cce73de.js" crossorigin="anonymous"></script>  
+    <title>ORINOCO - Panier</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <img src="images/logo.png" id="logo" alt="Logo de ORINOCO"></a>
+        <div class="boutons">
+        <button class="panier">Panier <i class="fas fa-shopping-cart"></i></button>
+        </div>
+        <p>Votre Panier</p><hr>
+	</header>
+	
+    <main>
+        <section class="row cadre2">
+            <h3 class="col-lg-12 text-center mt-4 mb-2 formulaire">Formulaire de commande</h3>
+            <form class="col-lg-12" id="validationCommande">
+                <div class="form-group">
+                    <label class="col-lg-5 label" for="firstName">Nom:</label>
+                    <input class="col-lg-5" type="text" id="firstName" required><br><br>
+                    <label class="col-lg-5 label" for="lastName">Prénom:</label>
+                    <input class="col-lg-5" type="text" id="lastName" required><br><br>
+                    <label class="col-lg-5 label" for="address">Adresse de livraison:</label>
+                    <input class="col-lg-5" type="text" id="address" required><br><br>
+                    <label class="col-lg-5 label" for="city">Ville:</label>
+                    <input class="col-lg-5" type="text" id="city" required><br><br>
+                    <label class="col-lg-5 label" for="email">Email:</label>
+                    <input class="col-lg-5" type="email" id="email" required><br><br>
+                    <button class="col-lg-5 btn btn-lg mt-4 order-submit btn-valide" type="submit" id="validerCommande">Valider la commande</button>
+                </div>
+            </form>
+        </section>
+    </main> 
+
+    <footer class="footer">
+        <a class="" href="#">Contact</a>
+        <a class="" href="#">Mentions légales</a>
+    </footer>
+
+</body>
+
+
+<script src="panier.js"></script>
+
+
+	
+</html>

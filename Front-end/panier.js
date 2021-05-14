@@ -2,7 +2,7 @@
     
     
 
-let form = document.getElementById('validationCommande');
+let form = document.getElementById('Form');
 form.addEventListener('submit', function() {
 
     // check champs du formulaire
@@ -31,5 +31,4 @@ form.addEventListener('submit', function() {
     alert('formulaire envoyé!');
     }
 
-    document.getElementByTagName("input");
-    console.log(input);}
+})

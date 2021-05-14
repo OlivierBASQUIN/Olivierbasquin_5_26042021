@@ -1,0 +1,76 @@
+/* ---------------------------------------- */
+/* == HEADER */
+/*---------------------------------------- */
+
+header {
+    height: 160px;
+}
+
+nav {
+    padding-top: 5rem;
+}
+
+/* == Image de fond header et footer */
+.bg-img{
+background-image : url("images/Img_background_appareil_photo.jpeg");
+}
+
+/* == Taille des images de la barre de navigation */
+.logo{
+    height: 55px;
+    width: 150px;
+}
+
+.panier{
+    height:1.25rem;
+}
+
+nav a{
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+/* == Comportement des liens de la barre de navigation au survol */
+.nav-item:hover{
+     border:0.1rem solid; 
+}
+
+
+/* ---------------------------------------- */
+/* == FOOTER */
+/*---------------------------------------- */
+
+footer {
+    height: 200px;
+    padding-top: 2rem;
+}
+
+.footerblockliens{
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 30px;
+    border: 0.1rem solid;
+}
+
+.footer a{
+   color: black;
+}
+
+.footer a:hover{
+    color: orange
+}
+
+.footer{
+    margin:auto;
+}
+
+/* ---------------------------------------- */
+/* == MAIN PANIER*/
+/*---------------------------------------- */
+
+.votrepanier{
+    font-size: 2rem;
+    margin-top : 4rem;
+}
+
+#Form{
+    margin: 6rem 0rem;
+}

@@ -7,11 +7,14 @@ form.addEventListener('submit', function() {
 
     // check champs du formulaire
     if (!document.getElementById('firstName').value.match(/^([a-zA-Zàâäéèêëïîôöùûüç' ]+)$/)){
-        alert('Le champs nom contient des erreurs');
-        window.location ='panier.html';
+        const firstWarning = document.getElementById("firstWarning");
+        let warning = document.createElement("div");
+        firstWarning.appendChild(warning);
+        warning.classList.add("");
+        warning.innerHTML = "Ce champs ne doit contenir que des lettres";
     } 
     if (!document.getElementById('lastName').value.match(/^([a-zA-Zàâäéèêëïîôöùûüç' ]+)$/)){
-        alert('Le champs prénom contient des erreurs');
+        alert('Le champs nom contient des erreurs');
         window.location ='panier.html';
     }
     if (!document.getElementById('address').value.match(/^([0-9]{1,3}(([,. ]?){1}[a-zA-Zàâäéèêëïîôöùûüç' ]+))$/)){

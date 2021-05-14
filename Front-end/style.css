@@ -1,9 +1,21 @@
+*{
+    border-radius: 30px;
+}
+
 /* ---------------------------------------- */
 /* == HEADER */
 /*---------------------------------------- */
-
 header {
-    height: 160px;
+    height: 185px;
+}
+
+.titre {
+    font-size: 1.6rem;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 30px;
+    border: 0.2rem solid;
+    padding: 0.7rem 1rem;
+    
 }
 
 nav {
@@ -17,7 +29,7 @@ background-image : url("images/Img_background_appareil_photo.jpeg");
 
 /* == Taille des images de la barre de navigation */
 .logo{
-    height: 55px;
+    height: 50px;
     width: 150px;
 }
 
@@ -25,13 +37,22 @@ background-image : url("images/Img_background_appareil_photo.jpeg");
     height:1.25rem;
 }
 
-nav a{
-    background-color: rgba(255, 255, 255, 0.897);
+.nav-link{
+    background-color: rgb(255, 255, 255);
+    border-radius: 0;
+    font-size: 1rem;
+    border:0.2rem solid rgb(116, 68, 116); 
+    margin-left: 0.5rem;
+    
+}
+
+.navbar-brand{
+    background-color: white;
 }
 
 /* == Comportement des liens de la barre de navigation au survol */
-.nav-item:hover{
-     border:0.1rem solid; 
+.nav-link:hover{
+     border:0.25rem solid; 
 }
 
 
@@ -47,7 +68,7 @@ footer {
 .footerblockliens{
     background-color: rgba(255, 255, 255, 0.897);
     border-radius: 30px;
-    border: 0.1rem solid;
+    border: 0.2rem solid;
 }
 
 .footer a{
@@ -74,3 +95,27 @@ footer {
 #Form{
     margin: 6rem 0rem;
 }
+
+/* ---------------------------------------- */
+/* == MAIN ACCUEIL*/
+/*---------------------------------------- */
+
+.block-bulles{
+    background-color: rgb(226, 222, 222);
+}
+
+.photo{
+    animation: bullesvisibles 2s;
+    animation-fill-mode: both;
+}
+
+    @keyframes bullesvisibles {
+        0% {
+          opacity: 0;
+          transform: translateY(5px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+    }

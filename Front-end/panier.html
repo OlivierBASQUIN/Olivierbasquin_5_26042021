@@ -31,42 +31,14 @@
         </nav>
 	</header>
 	
-     <main class="container" id="main-basket">
-
-        <!-- Panier -->
-            <!-- Label des colonnes du panier -->
-        <h1 class="text-center votrepanier">Votre Panier</h1><hr>
-        <div class="border border-warning rounded shadow my-5 p-4 text-center">
-            <div class="d-flex flex-row justify-content-between px-1 my-2 text-warning">
-                <p class="my-2">Nom</p>
-                <p class="my-2">Lentille</p>
-                <p class="my-2">Prix</p>
-            </div>
-
-                <!-- Contenu du panier -->
-            <div id="basket-content">
-                <!--Complèter chaque élément ajouté au panier avec le JS-->
-            </div>
-
-            <!-- Prix et bouton de vider le panier -->
-            <div class="">
-                <div id="total-price">
-                    <!-- Prix total de la commande  à compléter avec le JS-->
-                </div>
-
-                <div id="button-clear-basket">
-                    <!-- Bouton : vider le panier à compléter avec le JS-->
-                </div>
-            </div>
-        </div>
-
+     <main class="container" >
         <!--formulaire de commande-->
         <form id="Form">
             <div>
 
                 <div class="form-row">
                      <!--Prénom-->
-                    <div class="col-md-6 mb-1">
+                    <div class="col-md-6 mb-1" id="firstWarning">
                         <label for="firstName" class="pt-3">Prénom</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Olivier" required>
                     </div>

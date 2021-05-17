@@ -7,11 +7,17 @@ form.addEventListener('submit', function() {
 
     // check champs du formulaire
     if (!document.getElementById('firstName').value.match(/^([a-zA-Zàâäéèêëïîôöùûüç' ]+)$/)){
-        const firstWarning = document.getElementById("firstWarning");
-        let warning = document.createElement("div");
-        firstWarning.appendChild(warning);
-        warning.classList.add("");
-        warning.innerHTML = "Ce champs ne doit contenir que des lettres";
+        // Création d'une div contenant l'alerte
+        function alertFirstname () {
+            let warning = document.createElement("div");
+            const firstWarning = document.getElementById("firstWarning");
+            firstWarning.appendChild(warning);
+            warning.classList.add("font-weight-bold", "text-danger");
+            warning.textContent = "Ce champs ne doit contenir que des lettres";
+        }
+        //Appel de la fonction
+        alertFirstname ()
+        return event.preventDefault();
     } 
     if (!document.getElementById('lastName').value.match(/^([a-zA-Zàâäéèêëïîôöùûüç' ]+)$/)){
         alert('Le champs nom contient des erreurs');

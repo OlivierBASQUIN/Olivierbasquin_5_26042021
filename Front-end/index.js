@@ -4,8 +4,10 @@ function createCardCameras(cameras) {
     const cardBlock = document.getElementById("card-block");
     cardBlock.appendChild(divGlobalCameras);
     divGlobalCameras.classList.add("block-bulles", "row-cols-1", "row-cols-lg-3", "d-flex", "flex-wrap", "justify-content-around", "align-items-around", "shadow", "my-4", "px-5");
-
+    
     for (let i = 0; i < cameras.length; i++) {
+
+        // console.log (cameras[2])
 
         let divParent = document.createElement("div");
         divGlobalCameras.appendChild(divParent);
@@ -48,26 +50,8 @@ function createCardCameras(cameras) {
 
         let linkProduct = document.createElement("a");
         divLinkPrice.appendChild(linkProduct);
-        getUrlProduct(cameras,i,linkProduct);
         createButtonLinkProduct(linkProduct);
     }
-}
-
-//Récupération de l'id pour rediriger vers la page product correspondante
-function getUrlProduct(cameras,i,linkProduct) {
-   
-    // récupération de l'url
-    let splitUrl = window.location.pathname.split("/");
-    let lastItem = splitUrl.pop();
-    // console.log(window.location.pathname.replace(lastItem, 'produit.html'))
-    let url = window.location.origin + window.location.pathname.replace(lastItem, './Frontend/produit.html');
-
-    // // Création d'un objet url
-    let urlObj = new URL(url);
-    let idCameras = cameras[i]._id;
-    // Ajout du query string id
-    urlObj.searchParams.append("id", idCameras);
-    linkProduct.href = urlObj;
 }
 
 //Création du bouton de redirection avec le bon url

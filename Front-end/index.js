@@ -36,13 +36,12 @@ function createCardCameras(cameras) {
         descriptionCamera.classList.add("description", "text-justify");
         descriptionCamera.textContent = cameras[i].description;
 
-
         // Création d'une div englobant prix et bouton
         let divLinkPrice = document.createElement("div");
         divCardBody.appendChild(divLinkPrice);
         divLinkPrice.classList.add("d-flex", "flex-row", "justify-content-between");
 
-        // Création du prix
+        // Création du prix 
         let priceCamera = document.createElement("p");
         divLinkPrice.appendChild(priceCamera);
         priceCamera.classList.add("price", "my-2", "font-weight-bold");
@@ -54,7 +53,7 @@ function createCardCameras(cameras) {
     }
 }
 
-//Création du bouton de redirection avec le bon url
+//Création du bouton de redirection (URL à définir)
 function createButtonLinkProduct(linkProduct) {
     let buttonBuy = document.createElement("button");
     linkProduct.appendChild(buttonBuy);

@@ -8,16 +8,16 @@ form.addEventListener('submit', function() {
     // check champs du formulaire
     if (!document.getElementById('firstName').value.match(/^([a-zA-Zàâäéèêëïîôöùûüç' ]+)$/)){
         // Création d'une div contenant l'alerte
-        function alertFirstname () {
+        function alertFirstname (event) {
             let warning = document.createElement("div");
             const firstWarning = document.getElementById("firstWarning");
             firstWarning.appendChild(warning);
             warning.classList.add("font-weight-bold", "text-danger");
             warning.textContent = "Ce champs ne doit contenir que des lettres";
+            event.preventDefault();
         }
         //Appel de la fonction
         alertFirstname ()
-        return event.preventDefault();
     } 
     if (!document.getElementById('lastName').value.match(/^([a-zA-Zàâäéèêëïîôöùûüç' ]+)$/)){
         alert('Le champs nom contient des erreurs');

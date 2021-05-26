@@ -16,7 +16,7 @@ fetch(`http://localhost:3000/api/cameras/${params.get('id')}`)
         //--variable prix pour le diviser par 100
         let priceProdUnit = data.price / 100;
 
-        //--variable vide + boucle pour créer le select qui accueil les lenses
+        //--variable vide + boucle pour créer le select qui accueille les lenses
         let lens = "";
 
         data.lenses.forEach(lentille => {
@@ -35,12 +35,10 @@ fetch(`http://localhost:3000/api/cameras/${params.get('id')}`)
                     <form class="p-5">
                         <label for="quantiteProduit">Quantité:</label>
                         <input id ="quantiteProduit" type="number" min="1" max="9" value="1"/>
-                            <div class="my-1 pb-4 mt-4">
-                                <label for="formCustomSelect">Objectifs</label>
-                                <select class="custom-select" id="formCustomSelect">
-                                    ${lens}   
-                                </select>        
-                            </div>
+                        <div class="my-1 pb-4 mt-4">
+                            <label for="formCustomSelect">Objectifs</label>
+                            <select class="custom-select" id="formCustomSelect">${lens}</select>        
+                        </div>
                         <p class="text-center"><strong>Prix total</strong> : <span id="totalPrice">${priceProdUnit}</span> €</p>
                         <button id="btnAjout" type="button" class="btn btn-success col mt-3">Ajouter au panier</button>
                     </form>   

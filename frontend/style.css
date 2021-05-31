@@ -86,13 +86,8 @@ footer {
 /* == MAIN PANIER*/
 /*---------------------------------------- */
 
-.votrepanier{
-    font-size: 2rem;
-    margin-top : 4rem;
-}
-
-#Form{
-    margin: 6rem 0rem;
+Input{
+    border-radius: 0;
 }
 
 /* ---------------------------------------- */

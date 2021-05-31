@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <script src="https://kit.fontawesome.com/180cce73de.js" crossorigin="anonymous"></script>  
-    <title>ORINOCO - Panier</title>
+    <title>ORINOCO - Confirmation de commande</title>
 </head>
 
 <body>
@@ -31,53 +31,16 @@
         </nav>
     </header>
     
-	<!--Injection des produits dans le panier par le JS-->
-     <main class="container" >
-
+ <!-- Confirmation de commande -->   
+	<main class="container">
         <div id="main" class="row">
+            <div class="col-12 text-center my-5">
+                <p>Votre colis vous sera expédié sous 48h! </p>
+                <p>N° de commande :  <strong><span id="numCom"></span></strong></p>
+                <p><img class="img-fluid my-3" alt="message de remerciement" src="images/remerciement.png" /></p>
+            </div>
         </div>
-
-        <div class="center-block">
-            <p class="font-weight-bold text-center totalCount my-5">Total de votre panier : <span id="finalPrice"></span></p>
-        </div>
-
-        <a href="index.html" class="btn btn-info btn-block my-5">Continuer mes achats</a>
-
-
-        <!--formulaire de commande-->
-        <form class="container text-center" method="POST" id="submitForm">
-            <div class="form-group">
-                <label for="prenom">Prénom :</label><br>
-                <input type="text" name="prenom" placeholder=" Votre Prénom" class="col-10" minlength="1" id="prenom" pattern= "[a-zA-Z]+" required>
-            </div>
-    
-            <div class="form-group">
-                <label for="nom">Nom :</label><br>
-                <input type="text" name="nom" placeholder="Votre Nom" class="col-10" minlength="1" id="nom" pattern= "[a-zA-Z]+" required>
-            </div>
-    
-            <div class="form-group">
-                <label for="adresse">Adresse :</label><br>
-                <input type="text" name="adresse" placeholder="Votre Adresse" class="col-10" minlength="6" id="adresse" required> 
-            </div>
-    
-            <div class="form-group">
-                <label for="ville">Ville :</label><br>
-                <input type="text" name="ville" placeholder="Votre Ville" class="col-10" minlength="1" id="ville" pattern= "[a-zA-Z]+" required>
-            </div>
-    
-            <div class="form-group">
-                <label for="email">Email :</label><br>
-                <input type="email" name="email" placeholder="Votre Email" class="col-10" id="email" required>
-            </div>
-    
-            <div class="form-group text-right"><br>
-                <button id="btnCom" type="submit" class="btn btn-warning">Valider votre commande</button>
-            </div>
-    
-        </form>
     </main>
-
 
 <!-- Footer contenant un lien vers les mentions légales et un lien mail vers le contact Orinoco -->
     <footer class=" footer bg-img">
@@ -89,7 +52,7 @@
         </div>
     </footer>
 
-    <script src="panier.js"></script>
+    <script src="confirmation.js"></script>
 
 </body>
 

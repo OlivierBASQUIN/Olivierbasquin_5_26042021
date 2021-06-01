@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <header class=" header bg-img">
+    <header class="bg-img">
+
         <!-- Barre de navigation avec le logo Orinoco et lien vers l'accueil et le panier -->
         <nav class="navbar navbar-expand navbar-light px-3 pt-5">
             <a class="navbar-brand m-0" href="index.html">
@@ -21,21 +22,27 @@
             <div class="collapse navbar-collapse justify-content-end text-warning" id="headernav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Accueil</a>
+                        <a class="nav-link" href="index.html"><strong>Accueil</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="panier.html"><i class="fas fa-shopping-cart"></i></a>
+                        <a class="nav-link" href="panier.html"><strong><i class="fas fa-shopping-cart"></i></strong></a>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <!-- Titre du site -->
+        <div class="col shadow-sm d-flex flex-column align-items-center">
+            <h1 class="titre border-warning">Le spécialiste photo!</h1>
+        </div>
     </header>
     
- <!-- Confirmation de commande -->   
+<!-- Confirmation de commande -->   
 	<main class="container">
         <div id="main" class="row">
             <div class="col-12 text-center my-5">
                 <p>Votre colis vous sera expédié sous 48h! </p>
+                <p class="text-center totalCount my-5">Total de votre commande : <strong><span id="finalPrice"></span></strong></p>
                 <p>N° de commande :  <strong><span id="numCom"></span></strong></p>
                 <p><img class="img-fluid my-3" alt="message de remerciement" src="images/remerciement.png" /></p>
             </div>

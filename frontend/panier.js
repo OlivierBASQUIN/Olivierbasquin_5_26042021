@@ -57,7 +57,7 @@ function calculPrixPanier() {
     return totalPriceItem;
 };
 
-/*************VALIDATION FORMULAIRE******************/
+//--VALIDATION FORMULAIRE
 
 const lastname = document.getElementById('nom');
 const firstname = document.getElementById('prenom');
@@ -68,7 +68,7 @@ const email = document.getElementById('email');
 const form = document.querySelector("#submitForm");
 
 
-// ***************** ENVOIE DES DONNEES AU BACK ***********************
+//--ENVOIE DES DONNEES AU BACK
 
 //-- Fonction d'envoie au back
 

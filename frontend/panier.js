@@ -116,10 +116,9 @@ form.addEventListener("submit", (e) => {
                 };
             })
 
-        // traitement pour l'obtention du numéro de commmande
+        // action pour l'obtention du numéro de commmande
         .then((datas) => {
             const orderId = datas.orderId;
-            console.log(donnees);
             window.location.href = `confirmation.html?ncomm=${orderId}`;
 
         })
